@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 61vw bottom 57vh, left 29vw top 13vh;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    background-attachment: scroll;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    flex-wrap: wrap;
+
+}
+
+.content {
+    margin-left: 25px;
+}
+
+.top-section h1 {
+    font-size: 2.5rem;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.top-section p {
+    color: hsl(303, 10%, 53%);
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.star-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    font-size: 15px;
+    margin-right: 15px;
+
+}
+
+.star-boxes h3 {
+    color: hsl(300, 43%, 22%);
+}
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(300, 24%, 96%);
+    padding: 15px 87px 15px 29px;
+    border-radius: 5px;
+    margin-right: 5rem;
+}
+
+.report {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(300, 24%, 96%);
+    padding: 15px 87px 15px 29px;
+    border-radius: 5px;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.besttech {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: hsl(300, 24%, 96%);
+    padding: 15px 87px 15px 29px;
+    border-radius: 5px;
+    margin-left: 5rem;
+    margin-right: 1rem;
+}
+
+.stars-image {
+    margin-right: 25px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content: space-evenly;
+}
+
+div .colton,
+.irene,
+.anne {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    width: 30%;
+    padding-left: 15px;
+}
+
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 15px;
+    padding: 15px;
+}
+
+.card-image {
+    border-radius: 50%;
+    overflow: hidden;
+    height: 40px;
+
+}
+
+p.card-p {
+    padding: 20px 30px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+
+.name-title {
+    margin-left: 20px;
+}
+
+h4.name {
+    color: hsl(0, 0%, 100%);
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+h4.title {
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.profile-image {
+    width: 40px;
+}
+
+.irene {
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+.anne {
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width:768px) {
+    body {
+        background-image: none;
+    }
+
+    .content {
+        margin-right: 75px;
+        margin-bottom: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .star-boxes.reviews.report.besttech {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews {
+        margin-left: 17px;
+        width: 92%;
+        height: 80px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .report {
+        margin-left: 17px;
+        width: 92%;
+        height: 80px;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .besttech {
+        margin-left: 17px;
+        width: 92%;
+        height: 80px;
+        justify-content: center;
+    }
+
+    .footer {
+        display: contents;
+    }
+
+    .irene {
+        margin-bottom: 10px;
+    }
+
+    div.colton,
+    .irene,
+    .anne {
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width:320px) {
+    body {
+        background-image: none;
+    }
+
+    .star-boxes {
+        margin-left: -17px;
+    }
+
+    .report {
+        align-items: center;
+    }
+
+}
